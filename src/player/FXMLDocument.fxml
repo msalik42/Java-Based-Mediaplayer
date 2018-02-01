@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="player.FXMLDocumentController">
+   <bottom>
+      <VBox prefHeight="25.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="open" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="Open" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="playVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#playVideo" prefHeight="37.0" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="Play" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="pauseVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#pauseVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="Pause" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="stopVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#stopVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="Stop" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="slowerVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#slowerVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="&lt;&lt;&lt;" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="slowVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#slowVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="&lt;&lt;" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="normal" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#normal" prefHeight="37.0" prefWidth="25.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="#" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="fastVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#fastVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="&gt;&gt;" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="fasterVideo" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#fasterVideo" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="&gt;&gt;&gt;" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+                  <JFXButton fx:id="exit" buttonType="RAISED" maxWidth="1.7976931348623157E308" onAction="#exit" prefWidth="200.0" ripplerFill="WHITE" style="-fx-background-color: #49abc9; -fx-padding: 10;" text="Exit" textFill="#023e51">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="350.0" fitWidth="600.0">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </MediaView>
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
